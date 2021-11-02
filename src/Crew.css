@@ -1,0 +1,62 @@
+.crew{
+padding: 1.5rem;
+padding-bottom: 10vh;
+background:url('./assets/crew/background-crew-mobile.jpg');
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 100vh;
+color: white;
+text-align: center;
+font-weight: 400;
+}
+
+.crew__Image{
+    max-width: 50vw;
+    margin-inline: auto;
+    margin: 1rem auto;
+   
+}
+
+.crew__Circle{
+    display: flex;
+    justify-content: center;
+}
+.crew__Slider hr{
+   border: 1px solid grey;
+}
+.crew__Slider span{
+    height: 10px;
+    width: 10px;
+    background: gray;
+    border-radius: 50%;
+    margin: 30px 10px;
+
+}
+
+.crew__Post{
+    color: #ffffff;
+    font-family: var(--bellefair);
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.crew__Name{
+    margin: 10px 0px;
+    font-size: 24px;
+    font-family: var(--bellefair);
+    font-weight: 400;
+}
+.crew__About{
+    color: rgb(201, 198, 198);
+    font-family: var(--barlow);
+    font-size: 15px;
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+}
+
+.active{
+    background-color:white !important;
+}

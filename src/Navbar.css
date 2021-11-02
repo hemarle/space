@@ -1,0 +1,61 @@
+.navbar{  
+    padding: 1rem;
+    background-color: inherit;
+    
+}
+.navbar__Header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo{
+    height: 40px;
+    width: 40px;
+}
+.navbar img{
+    max-width: 100%;
+    height: auto;
+}
+.navbar__Hamburger, .navbar__Close{
+    width: 24px;
+    height: 24px;
+    z-index: 3;
+}
+
+.navbar .remove{
+    display: none;
+}
+
+.navbar__Content{
+min-height: 100vh;
+}
+
+.navbar__Body{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65vw;
+height: 100vh;
+    padding:15vh 0vw 0px 10vw ;
+    z-index: 2;
+background: rgba(255, 255, 255, 0.04);
+backdrop-filter: blur(82px);
+text-align: left !important;
+}
+.navbar__Option{
+    margin-bottom: 5vh;
+font-size: 16px;
+font-weight: 700;
+    font-family: var(--condensed);
+}
+.navbar__Option span{
+    font-size: 16px;
+    margin-left: 3vw;
+font-weight: 400;
+}
+.navbar__Option{
+    /* text-decoration: none; */
+    color: white;
+}
+

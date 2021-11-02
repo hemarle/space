@@ -1,0 +1,55 @@
+.homepage{
+    background: url(./assets/home/background-home-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+min-height: 100vh;
+padding: 1.5rem;
+text-align: center;
+color: white;
+font-weight: 400;
+}
+
+
+.homepage__Content h3{
+margin: 7vh 0px 0vh 0px;    
+font-size: 16px;
+font-family: var(--condensed) ;
+color: var(--light-white);
+letter-spacing: 2.7px;
+font-weight: 400;
+}
+.homepage__Content h1{
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 5vh;
+    font-family: var(--bellefair);
+    color: white;
+    text-transform: uppercase;
+}
+.homepage__Content p{
+    font-size: 15px;
+    line-height: 25px;
+    font-family: var(--barlow);
+color: var(--light-white);
+
+}
+
+.homepage button{
+    /* text-align: left; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3vh;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    font-size: 20px;
+    border:none;
+    font-family: var(--bellefair);
+    font-weight: 400;
+    font-style: normal;;
+    color: #0B0D17;
+    ;
+}
+

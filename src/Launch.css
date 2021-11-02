@@ -1,0 +1,74 @@
+.launch{
+    background-color: #0b0d17;
+    color: white;
+    background: url('./assets/technology/background-technology-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+text-align: center;
+
+/* padding: 1.5rem 0px; */
+padding-bottom: 10vh
+}
+.launch__Navbar{
+    
+padding: 1.5rem;
+padding-bottom: 0px;
+}
+
+.launch__Image{
+    /* height:170px; */
+    margin: 51px 0px;
+/* position: absolute; */
+}
+.launch__Circle{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.launch__Circle p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    /* align-items: center; */
+    margin:0px 10px;
+}
+.launch__Circle .active{
+    background-color: white;
+    color: black;
+} 
+
+.launch__Content h4{
+    margin:20px 0px 0px 0px;
+    font-size: 14px;
+    font-family: var(--condensed);
+    font-weight: 400;
+    color: var(--light-white);
+
+}
+.launch__Content h2{
+    margin: 5px 0px 20px 0px;
+    font-family: var(--bellefair);
+    font-size: 24px;
+    font-weight: 400;
+}
+.launch__Content p{
+    
+    padding-inline: 1rem;
+    font-size: 15px;
+    
+    font-family: var(--barlow);
+    color: var(--light-white);
+}
+.launch__Image img{
+    /* width: 100%; */
+    /* height: 100%; */
+}
