@@ -60,3 +60,40 @@ img{
 .active{
     background-color:white !important;
 }
+
+@media screen and (min-width:768px) {
+    .crew{
+        
+        padding: 0px;
+        padding-left: 39px;
+    }
+ .crew__Body{
+     display: flex;
+     flex-direction: column-reverse;
+    margin-top: 60px;
+    }
+    .crew__Name{
+        margin: 8px 0px 16px 0px ;
+    }
+    .crew__About{
+        width: 60vw;
+        margin: 0px auto 40px auto;
+    }
+    .crew__Circle{
+        margin-bottom: 40px;
+    }
+    .crew__Image{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .crew__Top{
+     display: flex;
+     flex-direction: column-reverse;
+
+ }   
+ .crew__Slider hr{
+     display: none;
+     visibility: hidden;
+ }
+}

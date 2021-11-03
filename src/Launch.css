@@ -68,7 +68,36 @@ padding-bottom: 0px;
     font-family: var(--barlow);
     color: var(--light-white);
 }
-.launch__Image img{
-    /* width: 100%; */
-    /* height: 100%; */
+
+
+@media screen and (min-width:768px) {
+    .launch__Navbar{
+        padding: 0%;
+        padding-left: 39px;
+
+    }
+
+    
+
+ .launch__Image{
+     margin-top: 60px;
+     margin-bottom: 56px;
+
+ }
+ .launch__Terminology{
+     font-size: 16px;
+ }
+ .launch__Name{
+     margin-top: 16px;
+     font-size: 40px;
+ }
+    .launch__About{
+        margin-top: 16px;
+        width: 70vw;
+        margin-inline: auto;
+    }
+    .launch .destination__Picker{
+        margin-left: 40px;
+    }
 }
+

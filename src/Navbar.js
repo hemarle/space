@@ -47,8 +47,8 @@ useEffect(()=>{
     return (
         <div className='navbar'>
 
-
-                <div className='navbar__Header'>
+        <div className='navbar__Main'>
+        <div className='navbar__Header'>
                    <Link to='/'>
                     <div className='navbar__Logo'>
                         <img src={logo} alt='logo'/>
@@ -65,21 +65,22 @@ useEffect(()=>{
 
 
                 <div className='remove navbar__Body'>
+                     
                       <Link to='/'>
                       
-                        <p className='navbar__Option'>00 <span>HOME</span></p>
+                        <p className='page navbar__Option'><span>00 </span><span >HOME</span></p>
                       </Link>
                       <Link to='/destination'>
                       
-                        <p className='navbar__Option'>01 <span>DESTINATION</span></p>
+                        <p className='navbar__Option'><span>01 </span> <span>DESTINATION</span></p>
                       </Link>
                       <Link to='/crew'>
-                        <p className='navbar__Option'>02 <span>CREW</span></p>
+                        <p className='navbar__Option'><span>02 </span> <span>CREW</span></p>
                       
                       </Link>
                       <Link to='/launch'>
                       
-                        <p className='navbar__Option'>03 <span>TECHNOLOGY</span></p>
+                        <p className='navbar__Option'><span>03 </span> <span>TECHNOLOGY</span></p>
                       </Link>
                       
                       
@@ -88,7 +89,9 @@ useEffect(()=>{
 
                    
                    
-           
+
+        </div>
+                          
         </div>
     )
 }

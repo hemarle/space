@@ -41,10 +41,10 @@ color: var(--light-white);
     left: 50%;
     transform: translateX(-50%);
     bottom: 3vh;
-    height: 150px;
-    width: 150px;
+    height: 20vh;
+    width: 20vh;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 1.25rem;
     border:none;
     font-family: var(--bellefair);
     font-weight: 400;
@@ -53,3 +53,17 @@ color: var(--light-white);
     ;
 }
 
+@media screen and (min-width:768px) {
+    .homepage{
+        padding: 0px;
+        padding-left: 20px;
+    }
+    .homepage__Content{
+        width: 50vw;
+        margin: 15vh auto;
+    }
+    .homepage button{
+        /* min-width: 262px;
+        min-height: 262px; */
+    }
+}

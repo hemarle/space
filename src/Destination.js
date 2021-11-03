@@ -54,16 +54,23 @@ destRef.forEach(e=>e.addEventListener('mouseenter', trueFunc))
             <div className='destination__Option'> TITAN </div>
         </div>
 
-        <h1>{data.destinations[info].name}</h1>
+        <h1 className='destination__Name'>{data.destinations[info].name}</h1>
         <p className='destination__About'> {data.destinations[info].description}</p>
 
-        <hr/>
+        {/* <hr/> */}
+<div className='destination__Footer'>
+<div>
 
         <p className='destination__AVG'>AVG. DISTANCE</p>
         <h2>{data.destinations[info].distance}</h2>
-
+</div>
+<div>
         <p className='destination__AVG'>EST. TRAVEL TIME</p>
         <h2>{data.destinations[info].travel}</h2>
+
+</div>
+
+</div>
     </div>
     )
 }

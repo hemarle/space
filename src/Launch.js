@@ -53,9 +53,9 @@ launchRef.forEach((element)=>{
             </div>
 <div className='launch__Content'>
 
-            <h4>THE TERMINOLOGY ...</h4>
-            <h2>{data.technology[dat].name}</h2>
-            <p>{data.technology[dat].description}</p>
+            <h4 className='launch__Terminology'>THE TERMINOLOGY ...</h4>
+            <h2 className='Launch__Name'>{data.technology[dat].name}</h2>
+            <p className='launch__About'>{data.technology[dat].description}</p>
 </div>
 
            

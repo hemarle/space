@@ -57,12 +57,13 @@ function Crew() {
                 <p>MEET YOUR CREW</p>
 
             </div>
-
-            <div className='crew__Image'>
+<div className='crew__Body'>
+<div className='crew__Top'>
+<div className='crew__Image'>
                 <img src={data.crew[info].images.png}/>
-            </div>
-
-            <div className='crew__Slider'>
+        
+        </div>
+                <div className='crew__Slider'>
                 <hr/>
                 <div className='crew__Circle'>
                 <span className='active crew__Dot'></span>
@@ -71,13 +72,23 @@ function Crew() {
                 <span className='crew__Dot'></span>
                 </div>
                 
+            {/* </div> */}
+</div>
+        
             </div>
+
+            <div className='crew__Content'>
+          
             <div className='crew__Info'>
             <p className='crew__Post'>{data.crew[info].role}</p>
             <h2 className='crew__Name'>{data.crew[info].name}</h2>
             
             <p className='crew__About'>{data.crew[info].bio}</p>    
             </div>
+            </div>
+</div>
+
+            
             
         </div>
     )
