@@ -20,12 +20,12 @@ function Launch() {
                setDat(value)
         }
         launchRef.forEach((element, value)=>{
-            element.addEventListener('mouseenter', ()=>dataFunc(value))
+            element.addEventListener('click', ()=>dataFunc(value))
         })
 
 
 launchRef.forEach((element)=>{
-    element.addEventListener('mouseenter',launchFunc)
+    element.addEventListener('click',launchFunc)
 })
 
     },[launchRef])
@@ -42,23 +42,36 @@ launchRef.forEach((element)=>{
 
             </div>
 
-            <div className='launch__Image'>
-                <img src={data.technology[dat].images.landscape} />
+            <div className='launch__Body'>
+
+                    <div className='launch__Image'>
+                        <picture>
+                        <source media="(min-width: 1024px)" srcset={data.technology[dat].images.portrait}  />
+
+                        <img src={data.technology[dat].images.landscape} />
+                        </picture>
+                    </div>
+                <div className='launch__Left'>
+
+                <div className='launch__Circle'>
+                        <p className='active circle'>1</p>
+                        <p className='circle'>2</p>
+                        <p className='circle'>3</p>
+                    </div>                   
+                    
+
+                <div className='launch__Content'>
+
+                    <h4 className='launch__Terminology'>THE TERMINOLOGY ...</h4>
+                    <h2 className='Launch__Name'>{data.technology[dat].name}</h2>
+                    <p className='launch__About'>{data.technology[dat].description}</p>
+                </div>
+                </div>
+
+            
+
             </div>
-
-            <div className='launch__Circle'>
-                <p className='active circle'>1</p>
-                <p className='circle'>2</p>
-                <p className='circle'>3</p>
-            </div>
-<div className='launch__Content'>
-
-            <h4 className='launch__Terminology'>THE TERMINOLOGY ...</h4>
-            <h2 className='Launch__Name'>{data.technology[dat].name}</h2>
-            <p className='launch__About'>{data.technology[dat].description}</p>
-</div>
-
-           
+            
              </div>
     )
 }

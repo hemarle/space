@@ -34,13 +34,13 @@ function Crew() {
 
        
         toggleRef.forEach((tog, value)=>
-        tog.addEventListener('mouseenter', ()=>setData(value)
+        tog.addEventListener('click', ()=>setData(value)
         )
         )
 
       
        toggleRef.forEach((tog)=>
-       tog.addEventListener('mouseenter',toggleFunc)
+       tog.addEventListener('click',toggleFunc)
        )
        },[toggleRef])
 
@@ -63,17 +63,17 @@ function Crew() {
                 <img src={data.crew[info].images.png}/>
         
         </div>
-                <div className='crew__Slider'>
+                {/* <div className='crew__Slider'>
                 <hr/>
                 <div className='crew__Circle'>
                 <span className='active crew__Dot'></span>
                 <span className='crew__Dot'></span>
                 <span className='crew__Dot'></span>
                 <span className='crew__Dot'></span>
-                </div>
+                </div> */}
                 
-            {/* </div> */}
-</div>
+           
+{/* </div> */}
         
             </div>
 
@@ -85,6 +85,18 @@ function Crew() {
             
             <p className='crew__About'>{data.crew[info].bio}</p>    
             </div>
+
+            <div className='crew__Slider'>
+                <hr/>
+                <div className='crew__Circle'>
+                <span className='active crew__Dot'></span>
+                <span className='crew__Dot'></span>
+                <span className='crew__Dot'></span>
+                <span className='crew__Dot'></span>
+                </div>
+                
+           
+</div>
             </div>
 </div>
 

@@ -3,9 +3,13 @@
 :root{
   --black:#0B0D17;
   --light-white:#D0D6F9;
+  --transparent:hsla(230°, 35%, 7%,0.1);
   --bellefair:'Bellefair', serif;
   --condensed: 'Barlow Condensed',sans-serif;
   --barlow:'Barlow', sans-serif;
 
 
+}
+a{
+  text-decoration: none;
 }

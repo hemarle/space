@@ -17,7 +17,10 @@ font-weight: 400;
     margin: 1rem auto;
    
 }
-
+.crew__Content{
+    display: flex;
+    flex-direction: column-reverse;
+}
 .crew__Circle{
     display: flex;
     justify-content: center;
@@ -25,12 +28,13 @@ font-weight: 400;
 .crew__Slider hr{
    border: 1px solid grey;
 }
-.crew__Slider span{
+.crew__Dot{
     height: 10px;
     width: 10px;
     background: gray;
     border-radius: 50%;
     margin: 30px 10px;
+    cursor: pointer;
 
 }
 
@@ -63,7 +67,10 @@ img{
 
 @media screen and (min-width:768px) {
     .crew{
-        
+        background: url('./assets/crew/background-crew-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; */
         padding: 0px;
         padding-left: 39px;
     }
@@ -71,6 +78,10 @@ img{
      display: flex;
      flex-direction: column-reverse;
     margin-top: 60px;
+    }
+
+    .crew__Content{
+        flex-direction: column;
     }
     .crew__Name{
         margin: 8px 0px 16px 0px ;
@@ -96,4 +107,50 @@ img{
      display: none;
      visibility: hidden;
  }
+}
+
+
+@media screen and (min-width:1024px) {
+.crew{
+    
+    background: url('./assets/crew/background-crew-desktop.jpg');
+    
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+    .crew__Body{
+     flex-direction: row-reverse;
+align-items: center;
+justify-content: space-evenly;
+margin-inline: 2vw;
+}   
+.crew__Top{
+    flex-direction: row-reverse;
+    align-items: center;
+    /* flex:0.5; */
+    max-width: 100%;
+}
+.crew__Image{
+    max-width: 40vh;
+}
+.crew__Image img{
+    max-width: 100%;
+}
+.crew__Content{
+    /* flex:0.5; */
+    /* margin-top: 10vh; */
+}
+.crew__Name{
+    margin:15px 0px 27px 0px;
+    font-size: 56px;
+}
+.crew__About{
+    max-width: 444px;
+    margin-bottom: 88px;
+}
+
+.crew__Dot:hover{
+    background: rgba(255, 255, 255,0.6);
+}
 }

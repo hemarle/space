@@ -24,9 +24,8 @@ padding-bottom: 0px;
 .launch__Circle{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
-.launch__Circle p{
+.launch__Circle .circle{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,18 +34,19 @@ padding-bottom: 0px;
     font-size: 18px;
     border: 1px solid gray;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: hsl(230°, 35%, 7%);
     text-align: center;
     color: white;
     /* align-items: center; */
     margin:0px 10px;
+    cursor: pointer;
 }
 .launch__Circle .active{
     background-color: white;
     color: black;
 } 
 
-.launch__Content h4{
+.launch__Terminology{
     margin:20px 0px 0px 0px;
     font-size: 14px;
     font-family: var(--condensed);
@@ -54,13 +54,13 @@ padding-bottom: 0px;
     color: var(--light-white);
 
 }
-.launch__Content h2{
+.launch__Name{
     margin: 5px 0px 20px 0px;
     font-family: var(--bellefair);
     font-size: 24px;
     font-weight: 400;
 }
-.launch__Content p{
+.launch__About{
     
     padding-inline: 1rem;
     font-size: 15px;
@@ -97,7 +97,63 @@ padding-bottom: 0px;
         margin-inline: auto;
     }
     .launch .destination__Picker{
-        margin-left: 40px;
+        margin-left: 38px;
     }
 }
 
+@media screen and (min-width:1024px) {
+    .launch{
+        background: url('./assets/technology/background-technology-desktop.jpg');
+    }
+ /* .launch .destination__Picker{
+     margin-left: 10vw;
+ } */
+    .launch__Body{
+        display: flex;
+        min-height: 60vh;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .launch__Left{
+        display: flex;
+        align-items: center;
+padding-left: 15vw;
+
+    }
+    .launch__Circle{
+        flex-direction: column;
+        margin-right: 3vw;
+    }
+    .launch__Circle .circle{
+        margin-bottom: 2vh;
+        width: 80px;
+        height: 80px;
+    }
+    .launch__Circle .circle:hover{
+            border: 1px solid white;
+    }
+    .launch__Content{
+        max-width: 470px;
+    }
+    .launch__Terminology{
+        font-size: 16px;
+    }
+    .launch__Name{
+        font-size: 56px;
+        line-height: 64px;
+    }
+    .launch__About{
+        max-width: 470px;
+        font-size: 18px;
+    }
+    .launch__Image{
+        max-width: 515px;
+        max-width: 100%;
+        /* height: 527px; */
+    }
+
+.launch__Image img{
+    height: 100%;
+}
+}

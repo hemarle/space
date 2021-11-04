@@ -55,6 +55,7 @@ color: var(--light-white);
 
 @media screen and (min-width:768px) {
     .homepage{
+        background: url('./assets/home/background-home-tablet.jpg');
         padding: 0px;
         padding-left: 20px;
     }
@@ -62,8 +63,55 @@ color: var(--light-white);
         width: 50vw;
         margin: 15vh auto;
     }
+}
+
+@media screen and (min-width:1024px) {
+    .homepage{
+        background: url('./assets/home/background-home-desktop.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        /* transform: rotate(-90deg); */
+    }
+    .homepage__Body{
+        margin-top: 30vh;
+       /* margin-right: 165px; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        /* border:2px solid; */
+        padding-bottom: 0;
+        margin-bottom: 0%;
+    }
+    .homepage__Content{
+        margin-bottom: 0;
+        max-width: 450px;
+        /* margin-top: ; */
+        margin: 0%;
+    }
+    .homepage__About{
+        padding:0;
+        margin: 0;
+    }
     .homepage button{
-        /* min-width: 262px;
-        min-height: 262px; */
+        position: relative;
+        width: 274px;
+        height: 274px;
+        bottom: 0;
+    }
+    .homepage button:hover::before{
+        position: absolute;
+        content: '';
+        width:150%;
+        height:150%;
+        top: -25%;
+        bottom: 0%;
+        right: 0%;
+        left: -25%;
+        border-radius:50% ;
+        background: rgb(223, 223, 228,0.1);
+        z-index: -1;
+        /* border: 15px solid rgba(255, 255, 2, 1); */
     }
 }
