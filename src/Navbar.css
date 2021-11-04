@@ -115,16 +115,16 @@ padding-right: 40px;
     font-weight: 400;
     line-height: 16.8px;
 }
- .page{
+.page{
     /* padding-bottom: 50%;
     
-        border-bottom:2px solid white ; */
-
-    }  
+    border-bottom:2px solid white ; */
+    
+}  
 }
 
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1440px) {
     .navbar{
         padding: 40px 0px 0px 55px;
     }
@@ -138,9 +138,13 @@ padding-right: 40px;
         justify-content: space-evenly;
         align-items: center;
     }
-
- .navbar__Option span{
-     margin-left: 12px;
+    
+    .navbar__Option span{
+        margin-left: 12px;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        line-height: 19.2px;
+        
  }
 
     .navbar__Option span:nth-child(1){

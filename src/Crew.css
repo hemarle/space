@@ -110,7 +110,7 @@ img{
 }
 
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1440px) {
 .crew{
     
     background: url('./assets/crew/background-crew-desktop.jpg');
@@ -141,13 +141,22 @@ margin-inline: 2vw;
     /* flex:0.5; */
     /* margin-top: 10vh; */
 }
+.crew__Post{
+    
+    font-size: 32px;
+    line-height: 36.67px;
+}
 .crew__Name{
     margin:15px 0px 27px 0px;
     font-size: 56px;
+    line-height: 64.18px;
 }
 .crew__About{
     max-width: 444px;
     margin-bottom: 88px;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: justify;
 }
 
 .crew__Dot:hover{

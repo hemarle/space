@@ -8,7 +8,7 @@
 text-align: center;
 
 /* padding: 1.5rem 0px; */
-padding-bottom: 10vh
+/* padding-bottom: 10vh */
 }
 .launch__Navbar{
     
@@ -101,9 +101,12 @@ padding-bottom: 0px;
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1440px) {
     .launch{
         background: url('./assets/technology/background-technology-desktop.jpg');
+        
+    background-repeat: no-repeat;
+    background-size: cover;
     }
  /* .launch .destination__Picker{
      margin-left: 10vw;
@@ -129,6 +132,8 @@ padding-left: 15vw;
         margin-bottom: 2vh;
         width: 80px;
         height: 80px;
+        font-size: 32px;
+        line-height: 36.67px;
     }
     .launch__Circle .circle:hover{
             border: 1px solid white;
@@ -138,6 +143,8 @@ padding-left: 15vw;
     }
     .launch__Terminology{
         font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 2.7px;
     }
     .launch__Name{
         font-size: 56px;
@@ -146,10 +153,13 @@ padding-left: 15vw;
     .launch__About{
         max-width: 470px;
         font-size: 18px;
+        line-height: 32px;
+        text-align: justify;
     }
     .launch__Image{
         max-width: 515px;
         max-width: 100%;
+        margin: 20px 0px;
         /* height: 527px; */
     }
 

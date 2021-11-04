@@ -59,11 +59,11 @@ function Destination() {
           <div className="destination__Footer">
             <div>
               <p className="destination__AVG">AVG. DISTANCE</p>
-              <h2>{data.destinations[info].distance}</h2>
+              <h2 className='destination__Value'>{data.destinations[info].distance}</h2>
             </div>
             <div>
               <p className="destination__AVG">EST. TRAVEL TIME</p>
-              <h2>{data.destinations[info].travel}</h2>
+              <h2 className='destination__Value'>{data.destinations[info].travel}</h2>
             </div>
           </div>
         </div>

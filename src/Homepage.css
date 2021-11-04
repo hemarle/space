@@ -1,5 +1,5 @@
 .homepage{
-    background: url(./assets/home/background-home-mobile.jpg);
+    background: url('./assets/home/background-home-mobile.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +11,7 @@ font-weight: 400;
 }
 
 
-.homepage__Content h3{
+.homepage__Title{
 margin: 7vh 0px 0vh 0px;    
 font-size: 16px;
 font-family: var(--condensed) ;
@@ -19,7 +19,7 @@ color: var(--light-white);
 letter-spacing: 2.7px;
 font-weight: 400;
 }
-.homepage__Content h1{
+.homepage__Name{
     font-size: 80px;
     font-weight: 400;
     margin-bottom: 5vh;
@@ -27,7 +27,7 @@ font-weight: 400;
     color: white;
     text-transform: uppercase;
 }
-.homepage__Content p{
+.homepage__About{
     font-size: 15px;
     line-height: 25px;
     font-family: var(--barlow);
@@ -50,7 +50,8 @@ color: var(--light-white);
     font-weight: 400;
     font-style: normal;;
     color: #0B0D17;
-    ;
+    cursor: pointer;
+    
 }
 
 @media screen and (min-width:768px) {
@@ -65,36 +66,45 @@ color: var(--light-white);
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1440px) {
     .homepage{
         background: url('./assets/home/background-home-desktop.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-    
-        /* transform: rotate(-90deg); */
+        padding-bottom: 131px;
     }
     .homepage__Body{
-        margin-top: 30vh;
-       /* margin-right: 165px; */
+        margin-top: 87px;
         display: flex;
         align-items: flex-end;
         justify-content: space-evenly;
-        /* border:2px solid; */
         padding-bottom: 0;
         margin-bottom: 0%;
     }
     .homepage__Content{
         margin-bottom: 0;
         max-width: 450px;
-        /* margin-top: ; */
         margin: 0%;
+    }
+    .homepage__Name{
+        font-size: 150px;
+        line-height: 172px;
+    }
+    .homepage__Title{
+        font-size: 28px;
+        line-height: 33.6px;
+        letter-spacing: 4.76px;
     }
     .homepage__About{
         padding:0;
         margin: 0;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: justify;
     }
     .homepage button{
+        font-size: 32px;
         position: relative;
         width: 274px;
         height: 274px;

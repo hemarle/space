@@ -46,7 +46,7 @@ justify-content: space-evenly;
     border-bottom: 1px solid rgba(255, 255, 255,0.5);
 
 }
-.destination h1{
+.destination__Name{
     text-align: center;
     margin: 20px 0px;
     font-size: 56px;
@@ -69,7 +69,7 @@ justify-content: space-evenly;
     margin: 20px 0px;
     border:1px solid gray;
 }
-.destination h2{
+.destination__Value{
     text-align: center;
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -140,7 +140,7 @@ justify-content: space-evenly;
 }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1440px) {
     .destination{
         
     background: url('./assets/destination/background-destination-desktop.jpg');
@@ -167,5 +167,32 @@ justify-content: space-evenly;
      max-width: 443px;
      justify-content: space-between;
  }
- 
+ .destination__Option{
+     font-size: 16px;
+     line-height: 19.2px;
+     letter-spacing: 2.7px;
+ }
+ .destination__Name{
+     text-align: left;
+    font-size: 100px;
+    line-height: 114.6px;
+    margin-bottom: 0;
+ }
+ .destination__About{
+     
+    font-size: 18px;
+    line-height: 32px;
+ }
+.destination__AVG{
+    
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 2.36px;
+    text-align: left;
+}
+.destination__Footer{
+    font-size: 28px;
+    line-height: 32px;
+    justify-content: space-between;
+}
 }
